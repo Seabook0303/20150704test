@@ -2,9 +2,10 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>20150704KML.kml</name>
-	<Style id="sh_A">
+	<open>1</open>
+	<Style id="sn_A">
 		<IconStyle>
-			<scale>1.3</scale>
+			<scale>1.1</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/paddle/A.png</href>
 			</Icon>
@@ -26,9 +27,15 @@
 			<styleUrl>#sh_A</styleUrl>
 		</Pair>
 	</StyleMap>
-	<Style id="sn_A">
+	<Style id="dir_route">
+		<LineStyle>
+			<color>7fa00000</color>
+			<width>6</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_A">
 		<IconStyle>
-			<scale>1.1</scale>
+			<scale>1.3</scale>
 			<Icon>
 				<href>http://maps.google.com/mapfiles/kml/paddle/A.png</href>
 			</Icon>
@@ -39,6 +46,16 @@
 				<href>http://maps.google.com/mapfiles/kml/paddle/A-lv.png</href>
 			</ItemIcon>
 		</ListStyle>
+	</Style>
+	<Style id="dir_step">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.gstatic.com/mapfiles/kml/paddle/pause.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<div>$[description]</div><div>$[geDirections]</div>]]></text>
+		</BalloonStyle>
 	</Style>
 	<Folder>
 		<name>20150704KML</name>
@@ -460,7 +477,7 @@
 		</Folder>
 		<Placemark>
 			<name>札幌テレビ塔</name>
-			<description><![CDATA[<img src="http://seabook0303.github.io/20150704test/IMGP0055.JPG"/width=100>
+			<description><![CDATA[<img src="http://seabook0303.github.io/20150704test/IMGP0055.JPG"/>
 
 テレビ塔]]></description>
 			<LookAt>
